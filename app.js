@@ -14,7 +14,7 @@ const VisitantesSchema = mongoose.Schema({
   name: String,
 });
 
-const Person = mongoose.model("Visitor", VisitantesSchema); // definimos el modelo
+const Visitor = mongoose.model("Visitors", VisitantesSchema); // definimos el modelo
 
 let dateString = Date();
 let good = 'El visitante fue almacenado con éxito';
