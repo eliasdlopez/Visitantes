@@ -33,10 +33,10 @@ app.get('/', (req, res) => {
 
   person.save((error) => {
     if (error) {
-      return res.send(`<h1> ${good} </h1>`);
+      return res.send(`error`);
     }
 
-    return res.send(`Record saved in database for ${name}`);
+    return res.send(`<h1> ${good} </h1>`);
   });
 
 });
